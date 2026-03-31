@@ -1,0 +1,77 @@
+[
+  {
+    "id": "fading_time",
+    "type": "number",
+    "label": {
+      "en": "Fading time",
+      "nl": "Reset tijd"
+    },
+    "value": 7,
+    "min": 0,
+    "max": 28800,
+    "units": {
+      "en": "seconds",
+      "nl": "seconden"
+    }
+  },
+  {
+    "id": "static_detection_distance",
+    "type": "number",
+    "label": {
+      "en": "Static detection distance",
+      "nl": "Statisch detectie afstand"
+    },
+    "value": 2,
+    "min": 0,
+    "max": 5,
+    "units": {
+      "en": "meters",
+      "nl": "meters"
+    }
+  },
+  {
+    "id": "static_detection_sensitivity",
+    "type": "number",
+    "label": {
+      "en": "Static detection sensitivity",
+      "nl": "Statische detectie gevoeligheid"
+    },
+    "value": 7,
+    "min": 0,
+    "max": 10,
+    "units": {
+      "en": "x",
+      "nl": "x"
+    }
+  },
+  {
+    "id": "motion_detection_sensitivity",
+    "type": "number",
+    "label": {
+      "en": "Motion detection sensitivity",
+      "nl": "Bewegingsdetectie gevoeligheid"
+    },
+    "value": 5,
+    "min": 0,
+    "max": 10
+  },
+  {
+    "id": "indicator",
+    "type": "dropdown",
+    "value": "OFF",
+    "label": {
+      "en": "Led indicator",
+      "nl": "Led indicator"
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": { "en": "Off" }
+      },
+      {
+        "id": "1",
+        "label": { "en": "On" }
+      }
+    ]
+  }
+]

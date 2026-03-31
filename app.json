@@ -4641,6 +4641,144 @@
       ]
     },
     {
+      "id": "occupancy_sensor",
+      "name": {
+        "en": "Presence Sensor"
+      },
+      "class": "sensor",
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "capabilities": [
+        "measure_battery",
+        "alarm_motion"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2450"
+        ]
+      },
+      "images": {
+        "large": "/drivers/occupancy_sensor/assets/images/large.png",
+        "small": "/drivers/occupancy_sensor/assets/images/small.png"
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "HOBEIAN"
+        ],
+        "productId": [
+          "ZG-204ZK"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              3,
+              1024,
+              1280,
+              61184
+            ],
+            "bindings": [
+              1024,
+              1280,
+              61184
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/occupancy_sensor/assets/icon.svg",
+          "instruction": {
+            "en": "Press the reset button for aprox 5 seconds until the LED blinks."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "fading_time",
+          "type": "number",
+          "label": {
+            "en": "Fading time",
+            "nl": "Reset tijd"
+          },
+          "value": 7,
+          "min": 0,
+          "max": 28800,
+          "units": {
+            "en": "seconds",
+            "nl": "seconden"
+          }
+        },
+        {
+          "id": "static_detection_distance",
+          "type": "number",
+          "label": {
+            "en": "Static detection distance",
+            "nl": "Statisch detectie afstand"
+          },
+          "value": 2,
+          "min": 0,
+          "max": 5,
+          "units": {
+            "en": "meters",
+            "nl": "meters"
+          }
+        },
+        {
+          "id": "static_detection_sensitivity",
+          "type": "number",
+          "label": {
+            "en": "Static detection sensitivity",
+            "nl": "Statische detectie gevoeligheid"
+          },
+          "value": 7,
+          "min": 0,
+          "max": 10,
+          "units": {
+            "en": "x",
+            "nl": "x"
+          }
+        },
+        {
+          "id": "motion_detection_sensitivity",
+          "type": "number",
+          "label": {
+            "en": "Motion detection sensitivity",
+            "nl": "Bewegingsdetectie gevoeligheid"
+          },
+          "value": 5,
+          "min": 0,
+          "max": 10
+        },
+        {
+          "id": "indicator",
+          "type": "dropdown",
+          "value": "OFF",
+          "label": {
+            "en": "Led indicator",
+            "nl": "Led indicator"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Off"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "On"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "outdoor_2_socket",
       "name": {
         "en": "Outdoor Smart Socket"
@@ -8256,7 +8394,8 @@
           "_TZ3000_fukaa7nc",
           "_TZ3000_88iqnhvd",
           "_TZ3000_3ias4w4o",
-          "_TZ3000_wzmuk9ai"
+          "_TZ3000_wzmuk9ai",
+          "_TZ3210_amdymr7l"
         ],
         "productId": [
           "TS0121",
